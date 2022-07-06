@@ -1,0 +1,96 @@
+
+:root {
+    --primary-color : #7cca96;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ddd ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.backg{
+    width: 75%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(247, 240, 240, 0.733);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(247, 240, 240, 0.3);
+    padding: 20px;
+}
+
+h1{
+    color:  var(--primary-color);
+    text-align: center;
+}
+
+p{
+    margin-top: 15px;
+    text-align: center;
+}
+.btn{
+    color : #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+.money-img{
+    width: 350px;
+}
+
+.currency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.currency select {
+    padding: 8px 12px 8px 8px;
+    border : 1px solid #dedede;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.currency input{
+    border: 0;
+    background: transparent;
+    font-size: 20px;
+    text-align: right;
+}
+
+.swap-rate-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+select:focus, input:focus , button:focus {
+    outline: none;
+}
+
+@media (max-width:600px) {
+    .currency input{
+        width: 200px;
+    }
+}
